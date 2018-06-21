@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Настройки">
+
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:title="Жирный шрифт"
+            android:defaultValue="Small"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Вторые Настройки">
+
+        <ListPreference
+            android:key="list_preference"
+            android:title="Лист"
+            android:dialogTitle="Лист 2"
+            android:entries="@array/list_preference_entries"
+            android:entryValues="@array/list_preference_entry_values" />
+        <Preference
+            android:title="GitHub">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://github.com/blackaist/" />
+        </Preference>
+        <ColorPickerPreference
+            android:defaultValue="#88C440"
+            android:dialogTitle="@string/color_picker_default_title"
+            android:key="pref_color"
+            android:summary="Very nice color"
+            android:title="ColorPickerPreference"
+            app:pref_size="small" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

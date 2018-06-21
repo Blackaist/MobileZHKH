@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="8dp"
+        >
+
+        <TextView
+            android:id="@+id/info_name"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:text="Наименование"/>
+
+        <TextView
+            android:id="@+id/info_nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="20"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+        <TextView
+            android:id="@+id/info_service"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="Услуга"/>
+        <TextView
+            android:id="@+id/info_servicetext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+        <TextView
+            android:id="@+id/info_inn"
+            
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="ИНН"/>
+        <TextView
+            android:id="@+id/info_inntext"
+            
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+        <TextView
+            android:id="@+id/info_personalacc"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="Расчетный счет"/>
+        <TextView
+            android:id="@+id/info_personalacctext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+        <TextView
+            android:id="@+id/info_bankname"
+            
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="Наименование банка"/>
+        <TextView
+            android:id="@+id/info_banknametext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+        <TextView
+            android:id="@+id/info_bic"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="БИК"/>
+        <TextView
+            android:id="@+id/info_bictext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+
+        <TextView
+            android:id="@+id/info_kpp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="КПП"/>
+        <TextView
+            android:id="@+id/info_kpptext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+
+        <TextView
+            android:id="@+id/info_correspacc"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="Корреспондентский счет"/>
+        <TextView
+            android:id="@+id/info_correspacctext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+
+        <TextView
+            android:id="@+id/info_persacc"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="Лицевой счет"/>
+        <TextView
+            android:id="@+id/info_persacctext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+        <TextView
+            android:id="@+id/info_paymperiod"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="Период оплаты"/>
+        <TextView
+            android:id="@+id/info_paymperiodtext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+
+        <TextView
+            android:id="@+id/info_amount"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start|bottom"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:text="Сумма с пени"/>
+        <TextView
+            android:id="@+id/info_amounttext"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textAllCaps="true"
+            android:maxLines="20" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@color/grey"/>
+
+        <Button
+            android:id="@+id/delete_bill"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="#ffffff"
+            android:text="Удалить"
+            android:background="@color/red"/>
+
+    </LinearLayout>
+
+</ScrollView>

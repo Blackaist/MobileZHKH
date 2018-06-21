@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/tools"
+                xmlns:williamchart="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chart_card_water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                williamchart:cardBackgroundColor="@color/colorGraphBackground"
+                williamchart:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="false"
+                android:background="#6a84c3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:text="Холодная вода"/>
+
+                    <com.db.chart.view.LineChartView
+                        android:id="@+id/chart_line_water"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="15dp"
+                        williamchart:chart_axis="false"
+                        williamchart:chart_axisBorderSpacing="8dp"
+                        williamchart:chart_labelColor="@color/colorGraphLabelTextColor" />
+
+                    <TextView
+                        android:id="@+id/textview_water"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/button_water"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Полный график" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/tools"
+                xmlns:williamchart="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chart_card_hot_water"
+                android:layout_below="@+id/chart_card_water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                williamchart:cardBackgroundColor="@color/colorGraphBackground"
+                williamchart:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="false"
+                android:background="#6a84c3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:text="Горячая вода"/>
+
+                    <com.db.chart.view.LineChartView
+                        android:id="@+id/chart_line_hot_water"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="15dp"
+                        williamchart:chart_axis="false"
+                        williamchart:chart_axisBorderSpacing="8dp"
+                        williamchart:chart_labelColor="@color/colorGraphLabelTextColor" />
+
+                    <TextView
+                        android:id="@+id/textview_hotwater"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/button_hotwater"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Полный график" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/tools"
+                xmlns:williamchart="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chart_card_electricity"
+                android:layout_below="@+id/chart_card_hot_water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                williamchart:cardBackgroundColor="@color/colorGraphBackground"
+                williamchart:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true"
+                app:cardPreventCornerOverlap="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        android:text="Электричество"/>
+
+                    <com.db.chart.view.LineChartView
+                        android:id="@+id/chart_line_energo"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="15dp"
+                        williamchart:chart_axis="false"
+                        williamchart:chart_axisBorderSpacing="8dp"
+                        williamchart:chart_labelColor="@color/colorGraphLabelTextColor" />
+
+                    <TextView
+                        android:id="@+id/textview_energo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"/>
+
+                    <Button
+                        android:id="@+id/button_energo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Полный график" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/tools"
+                    xmlns:williamchart="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/chart_card_gas"
+                    android:layout_below="@+id/chart_card_electricity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    williamchart:cardBackgroundColor="@color/colorGraphBackground"
+                    williamchart:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="false" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textAlignment="center"
+                            android:text="Газ"/>
+
+                        <com.db.chart.view.LineChartView
+                            android:id="@+id/chart_line_gas"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginBottom="15dp"
+                            williamchart:chart_axis="false"
+                            williamchart:chart_axisBorderSpacing="8dp"
+                            williamchart:chart_labelColor="@color/colorGraphLabelTextColor" />
+
+                        <TextView
+                            android:id="@+id/textview_gas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"/>
+
+                        <Button
+                            android:id="@+id/button_gas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Полный график" />
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            <!--
+            <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart_halfpiechart"
+                    android:layout_below="@+id/chart_card_gas"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp" /> -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

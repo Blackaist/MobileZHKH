@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorGraphBackgroundW">#6b6db5</color>
+
+    <color name="colorGraphBackground">#7375c2</color>
+    <color name="colorGraphUnderline">#6a6cba</color>
+
+    <color name="colorGraphPoint">#edd900</color>
+    <color name="colorGraphPointLine">#ffea00</color>
+    <color name="colorGraphPointAfter">#9fa8da</color>
+    <color name="colorGraphPointLineAfter">#9fa8da</color>
+
+    <color name="colorGraphLabelTextColor">#ffffff</color>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <Button
+        android:id="@+id/button_popup"
+        android:layout_width="201dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/login_form"
+        android:text="Назначение платежа" />
+
+    <TextView
+        android:id="@+id/textView_around_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_popup"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_around_popup"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_not_finded_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Данный QR код содержит не все необходимые поля. Введите вручную" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="179dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center_horizontal|center"
+        android:layout_below="@+id/login_form"
+        android:text="ОПЛАТИТЬ" />
+
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="179dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal|center"
+        android:gravity="center_horizontal|center"
+        android:layout_below="@+id/login_form"
+        android:text="СОХРАНИТЬ" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="74dp"
+        android:layout_height="77dp"
+        android:layout_above="@+id/login_form"
+        android:layout_alignEnd="@+id/login_form"
+        android:layout_marginBottom="-10dp"
+        app:srcCompat="@drawable/house" />
+
+</RelativeLayout>

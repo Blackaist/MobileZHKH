@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <EditText
+        android:id="@+id/editText_help"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Кратко изложите проблему"
+        android:inputType="textShortMessage|textPersonName" />
+
+    <EditText
+        android:id="@+id/editText2_help"
+        android:layout_width="342dp"
+        android:layout_height="249dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:maxLines="10"
+        android:minLines="1"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="310dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Отправить" />
+</RelativeLayout>
